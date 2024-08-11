@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About GIT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="center about">About GIT</h1>
+        <img src="/GIT.jpg" alt="" class="git-img">
+        <div class="git-data">
+            <p>Git is a tool used by developers to manage and track changes in their code. It helps teams collaborate on projects without overwriting each other’s work.</p>
+            <p><span class="git-mainHeadings">Features of Git :</span></p>
+            <ul>
+                <li><span class="git-subheadings">Version Control System: </span>Git keeps track of all the changes made to files in a project. This way, you can go back to previous versions if needed.</li>
+                <li><span class="git-subheadings">Repositories: </span>A Git repository (or repo) is where your project’s files and their history are stored. There are two main types:
+                    <ul>
+                        <li><span class="git-subheadings">Local Repository:</span> This is stored on your computer
+                        </li>
+                        <li><span class="git-subheadings">Remote Repository:</span> This is stored on a server, like GitHub, so it can be accessed by multiple people</li>
+                    </ul>
+                </li>
+                <li><span class="git-subheadings">Commits: </span>A commit is like a snapshot of your project at a specific point in time. It records changes made to the files</li>
+                <li><span class="git-subheadings">Branches:</span> Branches allow you to work on different parts of a project separately. For example, you can have a “main” branch for stable code and a “feature” branch for new features you’re developing.</li>
+                <li><span class="git-subheadings">Merging:</span> When you’re done working on a branch, you can merge it back into the main branch. This combines your changes with the rest of the project</li>
+                <li><span class="git-subheadings">Cloning:</span>
+                    Cloning is making a copy of a remote repository on your local machine so you can work on it.</li>
+            </ul>
+            <p>
+                <span class="git-mainHeadings">Steps to Setup a Git</span>
+                <ul>
+                    <li><span class="git-subheadings">Install Git:</span>
+                        Download and install Git from the official  <a href="https://git-scm.com/downloads" target="_blank">Git Website</a>.</li>
+                    <li><span class="git-subheadings">Configure Git:</span>
+                        Set up your username and email
+                        <div class="git-bgcommand">
+                            git config --global user.name "Your Name"<br>
+                            git config --global user.email "your.email@example.com"
+                        </div>
+                    </li>
+                    <li><span class="git-subheadings">Create a Repository:</span>Navigate to your project directory and initialize a Git repository.
+                        <div class="git-bgcommand">
+                            git initialize
+                        </div>
+                    </li>
+                    <li><span class="git-subheadings">Make Your First Commit: </span>
+                        <div class="git-bgcommand">
+                            git add . <br>
+                            git commit -m "Initial commit"
+                        </div>
+                    </li>
+                </ul>
+            </p>
+            <p>
+                <span class="git-mainHeadings">Basic Git Commands</span>
+                <ul>
+                    <li><span class="git-commandheadings">git version : </span>
+                        Shows the version of the git
+                        <div class="git-bgcommand">
+                            git --version
+                        </div>
+                    </li>
+                    <li><span class="git-commandheadings">git init :</span>Initializes a new Git repository.
+                        <div class="git-bgcommand">
+                            git init
+                        </div>
+                    </li>
+                    <li><span class="git-commandheadings">git clone [url] :</span> Clones a remote repository to your local machine
+                        <div class="git-bgcommand">
+                            git clone [url]
+                        </div>
+                    </li>
+                    <li><span class="git-commandheadings">git add [file]:</span>Stages changes to be committed.
+                        <div class="git-bgcommand">
+                            git file [url]
+                        </div></li>
+                    <li><span class="git-commandheadings">git add . :</span>Stage all the files
+                        <div class="git-bgcommand">
+                            git add .
+                        </div></li>
+                    <li><span class="git-commandheadings">git commit -m "message" :</span>Commits the staged changes with a message.
+                        <div class="git-bgcommand">
+                            git commit -m "Your commit message"
+                        </div>
+                    </li>
+                    <li><span class="git-commandheadings">git push : </span>Pushes your commits to a remote repository.
+                        <div class="git-bgcommand">
+                            git push origin branch-name
+                        </div>
+                    </li>
+                    <li><span class="git-commandheadings">git pull : </span>Fetches and merges changes from a remote repository to your local repository.
+                        <div class="git-bgcommand">
+                            git pull origin branch-name
+                        </div>
+                    </li>
+                    <li><span class="git-commandheadings">git status : </span>
+                        Shows the status of changes in your working directory.
+                        <div class="git-bgcommand">
+                            git status
+                        </div>
+                    </li>
+                    <li><span class="git-commandheadings">git log : </span>
+                        Shows the changes in the files and who did the commits.
+                        <div class="git-bgcommand">
+                            git log
+                        </div>
+                    </li>
+                    <li><span class="git-commandheadings">git branch new-branch : </span>
+                        Shows the status of changes in your working directory.
+                        <div class="git-bgcommand">
+                            git branch new-branch-name
+                        </div>
+                    </li>
+                    <li><span class="git-commandheadings">git branch : </span>
+                        Shows the current branch name
+                        <div class="git-bgcommand">
+                            git branch
+                        </div>
+                    </li>
+                    <li><span class="git-commandheadings">git checkout : </span>
+                        To change the branch from one branch to another branch
+                        <div class="git-bgcommand">
+                            git checkout branch-name
+                        </div>
+                    </li>
+                    <li><span class="git-commandheadings">git merge : </span>
+                        To merge the codes from one branch to another branch.
+                        <div class="git-bgcommand">
+                            git merge branch-name
+                        </div>
+                    </li>
+                </ul>
+            </p>
+            <p class="row">
+                <span class="git-mainHeadings">Git Workflow</span><br><br>
+                A Git workflow is a set of guidelines for using Git in a structured and efficient manner. Here’s a common Git workflow:
+                <ul class="git-workflow">
+                    <li><span class="git-subheadings">Clone Repository : </span>git clone git@github.com:username/repository.git</li>
+                    <li><span class="git-subheadings">Create Branch : </span>git checkout -b feature-branch-name</li>
+                    <li><span class="git-subheadings">Check Status : </span>git status</li>
+                    <li><span class="git-subheadings">Stage Changes : </span>git add filename or git add .</li>
+                    <li><span class="git-subheadings">Commit changes : </span>git commit -m "Add feature X</li>
+                    <li><span class="git-subheadings">Push Branch : </span>git push origin feature-branch-name</li>
+                    <li><span class="git-subheadings">Create Pull Request : </span>On GitHub/other service</li>
+                    <li><span class="git-subheadings">Update Local Repository : </span>git push origin feature-branch-name</li>
+                    <li><span class="git-subheadings">Delete Branch : </span>git branch -d feature-branch-name, git push origin --delete feature-branch-name</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
