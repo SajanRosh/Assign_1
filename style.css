@@ -15,6 +15,7 @@ body{
     border-radius: 14px;
     padding: 10px;
     box-sizing: border-box;
+    object-fit: cover;
 }
 .center{
     text-align: center;
